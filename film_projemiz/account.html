@@ -1,0 +1,164 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ÜYE KAYDI</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css, https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--!navbar baslangıcı-->
+    <div class="navbar">
+      <!--cssde ulasabilmek icin-->
+      <div class="navbar-wrapper">
+        <div class="logo-wrapper">
+          <h1 class="logo">DEVILCONE</h1>
+        </div>
+        <div class="menu-container">
+          <ul class="menu-list">
+            <li class="menu-list-item active"><a href="index.html">Ana Sayfa</a></li>
+            <li class="menu-list-item"> <a href="films.html">Filmler</a></li>
+            <li class="menu-list-item"><a href="series.html">Diziler</a></li>
+            <li class="menu-list-item"><a href="popular.html">Popüler</a></li>
+          </ul>
+          <!--kopyalandı-->
+          <div class="clearfix"></div>
+          <script>
+          $("span.menu").click(function () {
+            $(".top-menu ul").slideToggle("slow", function () {});
+          });
+        </script>
+        <!--kopyalandı-->
+
+        </div>
+        <div class="profil-container">
+          <img
+            class="profile-picture"
+            src="img/animekizi2.jpg"
+            alt=""
+          />
+
+          <div class="profile-text-container">
+            <span class="profile-text"><a href="account.html">Hesabım</a></span>
+            <i class="bi bi-caret-down-fill"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--!navbar bitisi-->
+
+    <!--!sidebar baslangıcı-->
+    <div class="sidebar">
+      <i class="bi bi-search"></i>
+      <i class="bi bi-house-door-fill"></i>
+      <i class="bi bi-people-fill"></i>
+      <i class="bi bi-bookmarks-fill"></i>
+      <i class="bi bi-hourglass-top"></i>
+      <i class="bi bi-cart-fill"></i>
+      <i class="bi bi-gear-fill"></i>
+    </div>
+    <!--!sidebar bitisi-->
+
+  <!--!form start-->
+
+    <title>Email ve Şifre Formu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            width: 300px;
+            padding: 16px;
+            background-color: white;
+            margin: 0 auto;
+            margin-top: 100px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        }
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+        .icon {
+            color: grey;
+            padding: 8px;
+            font-size: 20px;
+        }
+        .fas {
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+        }
+
+        .icon-input {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .icon-input i {
+        margin-right: 10px;
+    }
+    </style>
+</head>
+
+<body>
+
+<div class="container p-5">
+    <div class="card p-5">
+
+  <form action="panelgiris.html" method="post" style="max-width: 500px;margin:auto">
+    <div class="form-container">
+        <span class="icon">
+          <div class="icon-input">
+            <i class="fas fa-user"></i>
+        </span>
+        <input type="text" name="text" placeholder="kullanıcı adı" required>
+    </div>
+        <span class="icon">
+          <div class="icon-input">
+            <i class="fa fa-envelope"></i>
+            <input type="email" name="email" placeholder="E-Posta" required>
+        </div>
+        <div class="icon-input">
+            <i class="fas fa-lock"></i>
+        </span>
+        <input type="password" name="password" placeholder="Şifre" required>
+        </div>
+        <button type="submit">Kayıt Ol</button>
+      </div>
+  </form>
+  <br>
+
+
+  <p>Zaten hesabınız var mı?
+<a href="panelgiris.html">Giriş Yap</a></p>
+  </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
+
+<!--!form end-->

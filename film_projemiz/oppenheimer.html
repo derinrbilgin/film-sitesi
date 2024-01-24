@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devilcone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--!navbar baslangıcı-->
+    <div class="navbar">
+      <!--cssde ulasabilmek icin-->
+      <div class="navbar-wrapper">
+        <div class="logo-wrapper">
+          <h1 class="logo">DEVILCONE</h1>
+        </div>
+        <div class="menu-container">
+          <ul class="menu-list">
+            <li class="menu-list-item active"><a href="index.html">Ana Sayfa</a></li>
+            <li class="menu-list-item"> <a href="films.html">Filmler</a></li>
+            <li class="menu-list-item"><a href="series.html">Diziler</a></li>
+            <li class="menu-list-item"><a href="popular.html">Popüler</a></li>
+          </ul>
+          <!--kopyalandı-->
+          <div class="clearfix"></div>
+          <script>
+          $("span.menu").click(function () {
+            $(".top-menu ul").slideToggle("slow", function () {});
+          });
+        </script>
+        <!--kopyalandı-->
+
+        </div>
+        <div class="profil-container">
+          <img
+            class="profile-picture"
+            src="img/animekizi2.jpg"
+            alt=""
+          />
+
+          <div class="profile-text-container">
+            <span class="profile-text"><a href="account.html">Hesabım</a></span>
+            <i class="bi bi-caret-down-fill"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--!navbar bitisi-->
+
+    <!--!sidebar baslangıcı-->
+    <div class="sidebar">
+      <i class="bi bi-search"></i>
+      <a href="index.html"><i class="bi bi-house-door-fill"></i></a>
+      <i class="bi bi-people-fill"></i>
+      <i class="bi bi-bookmarks-fill"></i>
+      <i class="bi bi-hourglass-top"></i>
+      <i class="bi bi-cart-fill"></i>
+      <i class="bi bi-gear-fill"></i>
+    </div>
+    <!--!sidebar bitisi-->
+
+    
